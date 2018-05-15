@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>JavaScript</title>
+    </head>
+
+    <body>
+        <div id="monDiv" style="height:150px; width:150px; background-color: black"></div>
+        <input type="button" onclick="changeColor('red')" value="Rouge" />
+        <input type="button" onclick="changeColor('green')" value="Vert" />
+        <input type="button" onclick="changeColor('blue')" value="Bleu" />
+        <input type="button" onclick="changeColor('black')" value="Noir" />
+        <script>
+            function changeColor(colorWanted){
+                document.getElementById('monDiv').style.backgroundColor=colorWanted;
+            }
+        </script>
+    </body>
