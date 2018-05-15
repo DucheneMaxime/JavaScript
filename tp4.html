@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+    </head>
+
+    <body>
+        <script>
+            var indice = {"Anatole":19, "Bernad":45, "Christophe":34, "Dominique":55, "Franck":28, "Georges":78, "Lucas":12, "Madeleine":30, "Pierre":25};
+
+            function quelAge(){
+                var nom = document.getElementById('nom').value;
+                alert(nom+" a "+indice[nom]+" ans.");
+            }
+        </script>
+
+        <input id="nom" type="text" />
+        <input type="button" onclick="quelAge()" value="Quel age as tu ?" />
+    </body>
+</html>
