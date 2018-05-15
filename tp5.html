@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>JavaScript</title>
+    </head>
+
+    <body>
+        <script>
+            var notes = [15, 12, 18, 14, 16, 16, 19, 13, 11, 10, 16, 15];
+
+            function moyenne(){
+                var moyenne = 0;
+                for (i=0;i<notes.length;i++){
+                    moyenne += notes[i];
+                }
+                moyenne /= notes.length;
+                moyenne = Math.round((moyenne)*100)/100;
+                alert ("La moyenne est de " + moyenne);
+            }
+        </script>
+        <input type="button" onclick="moyenne()" value="Calculer la moyenne" />
+    </body>
+</html>

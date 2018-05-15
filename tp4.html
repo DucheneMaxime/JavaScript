@@ -7,11 +7,15 @@
 
     <body>
         <script>
-            var indice = {"Anatole":19, "Bernad":45, "Christophe":34, "Dominique":55, "Franck":28, "Georges":78, "Lucas":12, "Madeleine":30, "Pierre":25};
+            var indice = {"anatole":19, "bernad":45, "christophe":34, "dominique":55, "franck":28, "georges":78, "lucas":12, "madeleine":30, "pierre":25};
 
             function quelAge(){
                 var nom = document.getElementById('nom').value;
-                alert(nom+" a "+indice[nom]+" ans.");
+                if(nom===""){
+                    alert("Entrer un nom");
+                } else {
+                    alert(nom.charAt(0).toUpperCase()+nom.slice(1)+" a "+indice[nom]+" ans.");
+                }
             }
         </script>
 
