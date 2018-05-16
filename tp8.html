@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8" />
+    <link rel="stylesheet" media="screen" href="tp7.css" />
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+
+        function afterResultLoad() {
+            /*var json = xhttp.responseText;
+            var obj = JSON.parse(json);
+            console.log(obj.users);*/
+            var newUser = {id: "42", name: "Test", password="123"};
+
+        }
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onload = afterResultLoad;
+        xhttp.open("GET"
+            ,
+            "http://loisirs-web-backend.cleverapps.io/db"
+
+            , true);
+
+        xhttp.send();
+
+
+    </script>
+</body>

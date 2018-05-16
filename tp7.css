@@ -1,0 +1,32 @@
+.content {
+    background-color: #000099;
+    font-family: Arial, Helvetica;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+li {
+    text-align: center;
+    margin: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#todotxt {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#addtodo {
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+h1 {
+    color: white;
+}
